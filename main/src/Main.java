@@ -34,13 +34,14 @@ public class Main {
         int nbUsers = 20 ;
         
         JTextArea user1 = new JTextArea("coucou");
+
         
         JPanel listUser = new JPanel();
         listUser.setLayout(new BoxLayout(listUser, BoxLayout.Y_AXIS));
         listUser.setBackground(Color.gray);
         listUser.add(user1);
         panel.add(listUser, BorderLayout.LINE_START);
-        
+
         JPanel chatPanel = new JPanel(new BorderLayout());
         JPanel chatWindowPanel = new JPanel();
         chatWindowPanel.setLayout(new BoxLayout(chatWindowPanel, BoxLayout.Y_AXIS));
