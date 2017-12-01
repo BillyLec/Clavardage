@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class ManagePseudo {
 
+    private String AncienPseudo;
+
     public void ManagePseudo(){
 
         boolean exit = false;
@@ -15,15 +17,31 @@ public class ManagePseudo {
             System.out.print("What is your pseudo ? "); //Demande pseudo
             String message = readLine(); //Ecrire Pseudo
 
-            //Fonction verification unicite
+            //***** Fonction verification unicite *****
+            // existe = true;
 
             if (existe = false){
+                //***** enregistrer pseudo dans la base de données *****
                 exit = true;
             } else {
                 System.out.print("Pseudo already exist, choose another ! ");
             }
         }
     }
+
+    public void ModifierPseudo(){
+        ManagePseudo();
+        //****** if (clique sur cancel)*****
+        //****** break *****
+        //****** else *****
+        DeletePseudo(AncienPseudo);
+    }
+
+    public void DeletePseudo(String Pseudo){
+        //chercher dans la base de donnée, l'ancien pseudo
+    }
+
+
 
     //SCANF
     public String readLine() { return getScanner().nextLine();}
