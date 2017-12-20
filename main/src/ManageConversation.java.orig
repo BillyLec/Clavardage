@@ -2,12 +2,28 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.awt.Container;
+
 public class ManageConversation extends JPanel implements ActionListener{
+
+<<<<<<< HEAD
+public class ManageConversation {
+    
+    public void InitConversation() {
+        
+        //Do click in a textArea:
+        /*textField.addMouseListener(new MouseAdapter(){
+            @Override
+            public void mouseClicked(MouseEvent e){
+                textField.setText("");
+            }
+        });
+=======
     private final JTextField editMessage;
     private final JTextArea writeMessage = null;
     private final static String newline = "\n";
 
 
+>>>>>>> 7b93726318fc705305f82c269e4db8f27886a9a4
 
     public ManageConversation( ) {
         super( Boolean.parseBoolean( "ManageConversation.java" ) );
@@ -64,6 +80,10 @@ public class ManageConversation extends JPanel implements ActionListener{
 
         sendButton = new JButton();
     }
+<<<<<<< HEAD
+*/
+=======
+
     public void actionPerformed(ActionEvent evt) {
         String text = editMessage.getText();
         writeMessage.append(text + newline);
@@ -72,6 +92,7 @@ public class ManageConversation extends JPanel implements ActionListener{
         //Make sure the new text is visible, even if there
         //was a selection in the text area.
         writeMessage.setCaretPosition(writeMessage.getDocument().getLength());
+    }
 
     /**
           * Create the GUI and show it.  For thread safety,
@@ -95,5 +116,7 @@ public class ManageConversation extends JPanel implements ActionListener{
         //Schedule a job for the event dispatch thread:
         //creating and showing this application's GUI.
         javax.swing.SwingUtilities.invokeLater( () -> createAndShowGUI() );
+>>>>>>> 7b93726318fc705305f82c269e4db8f27886a9a4
     }
 }
+
