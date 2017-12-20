@@ -3,6 +3,9 @@ import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
+        
+        JSONParser jp = new JSONParser();
+        jp.parseJSON();
         // Creating instance of JFrame
         JFrame frame = new JFrame("Clavardage");
         // Setting the width and height of frame

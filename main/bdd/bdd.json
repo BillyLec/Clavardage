@@ -1,0 +1,19 @@
+{
+  "users" : {
+    "0" : {"pseudo" : "Alexa"},
+    "1" : {"pseudo" : "Ombeline"},
+    "2" : {"pseudo" : "Vanessa"}
+  },
+  "conversations": {
+    "0": {
+    "user1": "Alexa",
+    "user2": "Ombeline",
+    "messages": {
+      "0": {
+        "sender": "Alexa",
+        "time": "22h12"
+        }
+      }
+    }
+  }
+}
